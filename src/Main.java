@@ -55,7 +55,16 @@ public class Main {
         short totalWeightLoss=7*1000;
         short weightLossPerDay1=250;
         short weightLossPerDay2=500;
-
+        System.out.println("При ежедневной потере веса "+weightLossPerDay1+" грамм потребуется "+(totalWeightLoss/weightLossPerDay1)+ " дней");
+        System.out.println("При ежедневной потере веса "+weightLossPerDay2+" грамм потребуется "+(totalWeightLoss/weightLossPerDay2)+ " дней");
+        System.out.println("При средней ежедневной потере веса "+((float) (weightLossPerDay1+weightLossPerDay2)/2f)+" грамм потребуется "+String.format("%.2f",(float) (totalWeightLoss/((weightLossPerDay1+weightLossPerDay2)/2f)))+ " дней");
+        //task8
+        int salaryM=67760;
+        int salaryD=83690;
+        int salaryK=76230;
+        System.out.println("Зарплата Маши после повышения: "+(int) (salaryM*1.1)+" рублей в месяц. Годовой доход вырос на: "+(int) (salaryM*0.1*12)+ " рублей.");
+        System.out.println("Зарплата Дениса после повышения: "+(int) (salaryD*1.1)+" рублей в месяц. Годовой доход вырос на: "+(int) (salaryD*0.1*12)+ " рублей.");
+        System.out.println("Зарплата Кристины после повышения: "+(int) (salaryK*1.1)+" рублей в месяц. Годовой доход вырос на: "+(int) (salaryK*0.1*12)+ " рублей.");
 
     }
 }
