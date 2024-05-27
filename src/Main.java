@@ -31,13 +31,30 @@ public class Main {
         byte productivityPerMinute=16/2;
         byte time1=20;
         short time2=60*24;
-        int time3=time2*3;
+        short time3= (short) (time2*3);
         int time4=time2*30;
         System.out.println("За 20 минут машина произвела "+(productivityPerMinute*time1)+" бутылок");
         System.out.println("За сутки машина произвела "+(productivityPerMinute*time2)+" бутылок");
         System.out.println("За 3 дня машина произвела "+(productivityPerMinute*time3)+" бутылок");
         System.out.println("За месяц (30 дней) машина произвела "+(productivityPerMinute*time4)+" бутылок");
         //task5
+        byte totalTins=120;
+        byte whitePerClass=2;
+        byte brownPerClass=4;
+        byte totalClasses= (byte) (totalTins/(whitePerClass+brownPerClass));
+        System.out.println("В школе, где "+totalClasses+" классов, нужно "+(totalClasses*whitePerClass)+" банок белой краски и "+(totalClasses*brownPerClass)+" банок коричневой краски");
+        //task6
+        short weitghBanans=5*80;
+        short weitghMilk=2*105;
+        short weightIceCream=2*100;
+        short weightEggs=4*70;
+        int totalWeight=weitghBanans+weitghMilk+weightIceCream+weightEggs;
+       // float totalWeightKg=totalWeight)/1000f;
+        System.out.println("Общий вес завтрака "+totalWeight+" грамм или "+((float) (totalWeight/1000f))+ " килограмм");
+        //task7
+        short totalWeightLoss=7*1000;
+        short weightLossPerDay1=250;
+        short weightLossPerDay2=500;
 
 
     }
